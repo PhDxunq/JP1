@@ -64,7 +64,7 @@ public class Test {
             book.display();
         }
     }
-    
+
     public static void main(String[] args) {
         ArrayList<Computer> listCom = new ArrayList<>();
         ArrayList<Book> listBook = new ArrayList<>();
