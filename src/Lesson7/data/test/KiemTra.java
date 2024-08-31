@@ -12,13 +12,15 @@ public class KiemTra {
         System.out.println("3. Tìm kiếm sách theo tên tác giả");
         System.out.println("4. Thoát");
     }
+
     public static void main(String[] args) {
-        int choice;
         Scanner sc = new Scanner(System.in);
         QuanLyTaiLieu quanLyTaiLieu = new QuanLyTaiLieu();
+        int choice;
         do{
             headerMenu();
-            chocie = sc.nextInt();
+            System.out.print("Nhap Lua Chon: ");
+            choice = sc.nextInt();
             sc.nextLine();
             switch (choice){
                 case 1:
@@ -28,15 +30,16 @@ public class KiemTra {
                     quanLyTaiLieu.hienThiTatCaTaiLieu();
                 case 3:
                     String tenTacGia;
+                    System.out.print("Nhap ten tac gia muon tim: ");
                     tenTacGia = sc.nextLine();
                     quanLyTaiLieu.timKiemTheoTacGia(tenTacGia);
                     break;
                 case 4:
-                    System.exit();
+                    System.exit(0);
                     break;
                 default:
                     break;
             }
-        } while (choice < 0 || choice > 4);
+        } while (choice > 0 && choice < 4);
     }
 }

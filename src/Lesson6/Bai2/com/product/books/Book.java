@@ -8,6 +8,9 @@ public class Book extends Product {
     private String type;
     private String publisher;
 
+    public Book() {
+    }
+
     public Book(String proID, String proName, int year, float price, String type, String publisher) {
         this.proID = proID;
         this.proName = proName;

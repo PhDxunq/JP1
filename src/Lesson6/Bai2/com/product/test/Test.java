@@ -20,6 +20,8 @@ public class Test {
     public static void inputComputer(ArrayList<Computer> listCom){
         int n;
         Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        sc.nextLine();
         for (int i = 0; i < n; i++) {
             Computer computer = new Computer();
             computer.input();
@@ -29,6 +31,8 @@ public class Test {
     public static void inputBook(ArrayList<Book> listBook){
         int n;
         Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        sc.nextLine();
         for (int i = 0; i < n; i++) {
             Book book = new Book();
             book.input();
@@ -43,7 +47,7 @@ public class Test {
             if (o1.getPrice() < o2.getPrice()){
                 return 1;
             }
-            return 0
+            return 0;
         });
         for (Computer computer : listCom){
             computer.display();;
@@ -52,13 +56,7 @@ public class Test {
 
     public static void sortBookByPublisher(ArrayList<Book> listBook){
         listBook.sort((o1, o2) -> {
-            if (o1.getPublisher() < o2.getPublisher()){
-                return -1;
-            }
-            if (o1.getPublisher() > o2.getPublisher()){
-                return 1;
-            }
-            return 0;
+            return o1.getPublisher().compareToIgnoreCase(o2.getPublisher());
         });
         for (Book book : listBook){
             book.display();
@@ -93,6 +91,6 @@ public class Test {
                 default:
                     break;
             }
-        } while (choice < 0 || choice > 5);
+        } while (choice > 0 && choice < 5);
     }
 }

@@ -14,7 +14,7 @@ public class QuanLyTaiLieu {
     public void themTaiLieu(){
         int n;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap vao so luong sach: ");
+        System.out.print("Nhap vao so luong sach: ");
         n = sc.nextInt();
         sc.nextLine();
 
@@ -31,7 +31,7 @@ public class QuanLyTaiLieu {
     }
 
     public void timKiemTheoTacGia(String tenTacGia){
-        System.out.println("Nhap ten tac gia muon tim: ");
+
         for (Sach sach : listSach){
             if (sach.getTenTacGia().equalsIgnoreCase(tenTacGia)){
                 sach.hienthi();

@@ -55,14 +55,14 @@ public class Sach implements ITaiLieu {
     @Override
     public void nhap() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap id: ");
+        System.out.print("Nhap id: ");
         id = sc.nextInt();
         sc.nextLine();
-        System.out.println("Nhap Ten Sach: ");
+        System.out.print("Nhap Ten Sach: ");
         tenSach = sc.nextLine();
-        System.out.println("Nhap Ten Tac Gia: ");
+        System.out.print("Nhap Ten Tac Gia: ");
         tenTacGia = sc.nextLine();
-        System.out.println("Nhap gia: ");
+        System.out.print("Nhap gia: ");
         gia = sc.nextInt();
         sc.nextLine();
     }

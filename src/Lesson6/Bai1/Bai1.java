@@ -31,7 +31,7 @@ public class Bai1 {
             return this.x == other.x && this.y == other.y;
         }
     }
-    public static void main(String[] args) {
+    public  void main(String[] args) {
 
         Point point1 = new Point(5, 10);
         Point point2 = new Point(5, 10);
