@@ -10,7 +10,7 @@ public class TuyenSinh {
         System.out.println("2.Hiện thị thông tin của thí sinh và khối thi của thí sinh.");
         System.out.println("3.Tìm kiếm theo số báo danh.");
         System.out.println("4.Thoát khỏi chương trình.");
-        System.out.println("Lua chon chuc nang: ");
+        System.out.print("Lua chon chuc nang: ");
     }
     public static void main(String[] args) {
         int choice;
@@ -29,10 +29,13 @@ public class TuyenSinh {
                     quanLyThiSinh.themSinhVien(khoiThi);
                     break;
                 case 2:
-
+                    quanLyThiSinh.hienThiThiSinh();
                     break;
                 case 3:
-
+                    System.out.print("Nhap SBD:");
+                    soBaoDanh = sc.nextInt();
+                    sc.nextLine();
+                    quanLyThiSinh.timKiemTheoSBD(soBaoDanh);
                     break;
                 case 4:
                     System.exit(0);

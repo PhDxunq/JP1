@@ -44,6 +44,9 @@ public class Index {
                     loaiTaiLieu  = sc.nextLine();
                     quanLyTaiLieu.timKiemTailieu(loaiTaiLieu);
                     break;
+                case 5:
+                    System.exit(0);
+                    break;
                 default:
                     break;
             }
