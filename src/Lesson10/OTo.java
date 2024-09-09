@@ -1,5 +1,7 @@
 package Lesson10;
 
+import java.util.Scanner;
+
 public class OTo extends Vehicle{
     private int soChoNgoi;
     private String kieuDongCo;
@@ -42,7 +44,21 @@ public class OTo extends Vehicle{
         this.kieuDongCo = kieuDongCo;
     }
 
-    i
+    @Override
+    public void input() {
+        super.input();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap so cho ngoi: ");
+        soChoNgoi = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Nhap kieu dong co: ");
+        kieuDongCo = sc.nextLine();
+    }
+
+    @Override
+    public void display() {
+        System.out.println(this.toString());
+    }
 
     @Override
     public String toString() {

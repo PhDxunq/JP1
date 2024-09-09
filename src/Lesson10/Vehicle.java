@@ -79,7 +79,24 @@ public class Vehicle implements Ivehicle{
     @Override
     public void input() {
         Scanner sc = new Scanner(System.in);
-        
+        System.out.print("Nhap ID: ");
+        ID = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Nhap hang san xuat: ");
+        hangSanXuat = sc.nextLine();;
+        System.out.print("Nhap nam san xuat: ");
+        namSanXuat = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Nhap gia: ");
+        gia = sc.nextDouble();
+        sc.nextLine();
+        System.out.print("Nhap mau xe: ");
+        mauXe = sc.nextLine();
+    }
+
+    @Override
+    public void display() {
+        System.out.println(this.toString());
     }
 
     @Override

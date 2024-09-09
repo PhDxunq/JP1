@@ -1,5 +1,7 @@
 package Lesson10;
 
+import java.util.Scanner;
+
 public class XeTai extends Vehicle{
     private int trongTai;
 
@@ -17,6 +19,20 @@ public class XeTai extends Vehicle{
 
     public void setTrongTai(int trongTai) {
         this.trongTai = trongTai;
+    }
+
+    @Override
+    public void input() {
+        super.input();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap trong tai: ");
+        trongTai = sc.nextInt();
+        sc.nextLine();
+    }
+
+    @Override
+    public void display() {
+        System.out.println(this.toString());
     }
 
     @Override

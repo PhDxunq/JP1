@@ -1,5 +1,7 @@
 package Lesson10;
 
+import java.util.Scanner;
+
 public class XeMay extends Vehicle{
     private int congSuat;
 
@@ -17,6 +19,20 @@ public class XeMay extends Vehicle{
 
     public void setCongSuat(int congSuat) {
         this.congSuat = congSuat;
+    }
+
+    @Override
+    public void input() {
+        super.input();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap cong suat: ");
+        congSuat = sc.nextInt();
+        sc.nextLine();
+    }
+
+    @Override
+    public void display() {
+        System.out.println(this.toString());
     }
 
     @Override
