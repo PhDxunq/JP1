@@ -43,6 +43,7 @@ public class ManagerHotel {
                     System.out.print("Nhap loai phong: ");
                     loaiPhong = sc.nextLine();
                     hotel.calculatePrice(day,CMND,loaiPhong);
+                    break;
                 default:
                     break;
             }
